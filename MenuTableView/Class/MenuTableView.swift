@@ -11,7 +11,7 @@ import UIKit
 class MenuTableView: UIView {
 
     private var mainTableView:UITableView!
-    private var sections : [MenuSection]
+    private var sections : [MenuSection] = []
     override func awakeFromNib() {
         mainTableView = UITableView.init(frame: self.frame)
         self.addSubview(mainTableView)
@@ -21,6 +21,7 @@ class MenuTableView: UIView {
     func setupTableView(){
         mainTableView.delegate = self
         mainTableView.dataSource = self
+        mainTableView.register(UINib(nibName: "labelandimgCell", bundle: nil), forCellReuseIdentifier: "labelandimg")
     }
     /*
     // Only override draw() if you perform custom drawing.
@@ -29,16 +30,24 @@ class MenuTableView: UIView {
         // Drawing code
     }
     */
+    
+    private func getCell(indexPath:IndexPath) -> MenuCell{
+        return sections[indexPath.section].cells[indexPath.row]
+    }
 
 }
 
 class  MenuSection {
-    private var section: [MenuCell] = []
+    private var cells: [MenuCell] = []
+    
+    
 }
 
 class  MenuCell {
-    private var title:String = ""
-    private var img :UIImage!
+    var title:String = ""
+    var img :UIImage!
+    
+    
 }
 
 extension MenuTableView:UITableViewDelegate,UITableViewDataSource{
@@ -47,7 +56,11 @@ extension MenuTableView:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "labelandimg") as! LabelAndImgTableViewCell
+        cell.cellImg.image = getCell(indexPath: indexPath).img
+        
+        cell.cellTitleLB.text = getCell(indexPath: indexPath).title
+        return cell
     }
     
     

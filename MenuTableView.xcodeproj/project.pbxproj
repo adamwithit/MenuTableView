@@ -17,6 +17,12 @@
 		AFF2760F21EC833D007D9F31 /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2760E21EC833D007D9F31 /* MenuTableView.swift */; };
 		AFF2761021EC833D007D9F31 /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2760E21EC833D007D9F31 /* MenuTableView.swift */; };
 		AFF2761121EC833D007D9F31 /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2760E21EC833D007D9F31 /* MenuTableView.swift */; };
+		AFF2761321EC8F62007D9F31 /* labelandimgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF2761221EC8F62007D9F31 /* labelandimgCell.xib */; };
+		AFF2761421EC8F62007D9F31 /* labelandimgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF2761221EC8F62007D9F31 /* labelandimgCell.xib */; };
+		AFF2761521EC8F62007D9F31 /* labelandimgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF2761221EC8F62007D9F31 /* labelandimgCell.xib */; };
+		AFF2761721EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2761621EC9331007D9F31 /* LabelAndImgTableViewCell.swift */; };
+		AFF2761821EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2761621EC9331007D9F31 /* LabelAndImgTableViewCell.swift */; };
+		AFF2761921EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2761621EC9331007D9F31 /* LabelAndImgTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,8 @@
 		AFF275FE21EC3F66007D9F31 /* MenuTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewUITests.swift; sourceTree = "<group>"; };
 		AFF2760021EC3F66007D9F31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFF2760E21EC833D007D9F31 /* MenuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableView.swift; sourceTree = "<group>"; };
+		AFF2761221EC8F62007D9F31 /* labelandimgCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = labelandimgCell.xib; sourceTree = "<group>"; };
+		AFF2761621EC9331007D9F31 /* LabelAndImgTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndImgTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				AFF2760E21EC833D007D9F31 /* MenuTableView.swift */,
+				AFF2761221EC8F62007D9F31 /* labelandimgCell.xib */,
+				AFF2761621EC9331007D9F31 /* LabelAndImgTableViewCell.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -242,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF2761321EC8F62007D9F31 /* labelandimgCell.xib in Resources */,
 				AFF275E921EC3F66007D9F31 /* LaunchScreen.storyboard in Resources */,
 				AFF275E621EC3F66007D9F31 /* Assets.xcassets in Resources */,
 				AFF275E421EC3F5F007D9F31 /* Main.storyboard in Resources */,
@@ -252,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF2761421EC8F62007D9F31 /* labelandimgCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF2761521EC8F62007D9F31 /* labelandimgCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF2761721EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */,
 				AFF275E121EC3F5F007D9F31 /* ViewController.swift in Sources */,
 				AFF2760F21EC833D007D9F31 /* MenuTableView.swift in Sources */,
 				AFF275DF21EC3F5F007D9F31 /* AppDelegate.swift in Sources */,
@@ -281,6 +295,7 @@
 			files = (
 				AFF2761021EC833D007D9F31 /* MenuTableView.swift in Sources */,
 				AFF275F421EC3F66007D9F31 /* MenuTableViewTests.swift in Sources */,
+				AFF2761821EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +305,7 @@
 			files = (
 				AFF2761121EC833D007D9F31 /* MenuTableView.swift in Sources */,
 				AFF275FF21EC3F66007D9F31 /* MenuTableViewUITests.swift in Sources */,
+				AFF2761921EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,9 @@
 		AFF275E921EC3F66007D9F31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF275E721EC3F66007D9F31 /* LaunchScreen.storyboard */; };
 		AFF275F421EC3F66007D9F31 /* MenuTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF275F321EC3F66007D9F31 /* MenuTableViewTests.swift */; };
 		AFF275FF21EC3F66007D9F31 /* MenuTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF275FE21EC3F66007D9F31 /* MenuTableViewUITests.swift */; };
+		AFF2760F21EC833D007D9F31 /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2760E21EC833D007D9F31 /* MenuTableView.swift */; };
+		AFF2761021EC833D007D9F31 /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2760E21EC833D007D9F31 /* MenuTableView.swift */; };
+		AFF2761121EC833D007D9F31 /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2760E21EC833D007D9F31 /* MenuTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		AFF275FA21EC3F66007D9F31 /* MenuTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF275FE21EC3F66007D9F31 /* MenuTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewUITests.swift; sourceTree = "<group>"; };
 		AFF2760021EC3F66007D9F31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF2760E21EC833D007D9F31 /* MenuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		AFF275DD21EC3F5F007D9F31 /* MenuTableView */ = {
 			isa = PBXGroup;
 			children = (
+				AFF2760D21EC828D007D9F31 /* Class */,
 				AFF275DE21EC3F5F007D9F31 /* AppDelegate.swift */,
 				AFF275E021EC3F5F007D9F31 /* ViewController.swift */,
 				AFF275E221EC3F5F007D9F31 /* Main.storyboard */,
@@ -123,6 +128,14 @@
 				AFF2760021EC3F66007D9F31 /* Info.plist */,
 			);
 			path = MenuTableViewUITests;
+			sourceTree = "<group>";
+		};
+		AFF2760D21EC828D007D9F31 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				AFF2760E21EC833D007D9F31 /* MenuTableView.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF275E121EC3F5F007D9F31 /* ViewController.swift in Sources */,
+				AFF2760F21EC833D007D9F31 /* MenuTableView.swift in Sources */,
 				AFF275DF21EC3F5F007D9F31 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF2761021EC833D007D9F31 /* MenuTableView.swift in Sources */,
 				AFF275F421EC3F66007D9F31 /* MenuTableViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF2761121EC833D007D9F31 /* MenuTableView.swift in Sources */,
 				AFF275FF21EC3F66007D9F31 /* MenuTableViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MenuTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MenuTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

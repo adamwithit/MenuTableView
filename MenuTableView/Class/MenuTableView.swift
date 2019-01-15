@@ -8,12 +8,12 @@
 
 import UIKit
 
-class MenuTableView: UIView {
+public class MenuTableView: UIView {
 
     var mainTableView:UITableView!
     var sections : [MenuSection] = []
     var showSectionNum = 1
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         mainTableView = UITableView.init(frame: self.frame)
         self.addSubview(mainTableView)
         setupTableView()
@@ -43,7 +43,7 @@ class MenuTableView: UIView {
 
 }
 
-class  MenuSection {
+public class  MenuSection {
     var cells: [MenuCell] = []
     var title: String = ""
     
@@ -54,7 +54,7 @@ class  MenuSection {
     
 }
 
-class  MenuCell {
+public class  MenuCell {
     var title:String = ""
     var img :UIImage!
     
@@ -68,11 +68,11 @@ extension MenuTableView:UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return showSectionNum
     }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell") as! SectionTableViewCell
         cell.cells = sections[indexPath.section].cells
         return cell

@@ -10,8 +10,9 @@ import UIKit
 
 class MenuTableView: UIView {
 
-    private var mainTableView:UITableView!
-    private var sections : [MenuSection] = []
+    var mainTableView:UITableView!
+    var sections : [MenuSection] = []
+    var showSectionNum = 1
     override func awakeFromNib() {
         mainTableView = UITableView.init(frame: self.frame)
         self.addSubview(mainTableView)
@@ -21,7 +22,8 @@ class MenuTableView: UIView {
     func setupTableView(){
         mainTableView.delegate = self
         mainTableView.dataSource = self
-        mainTableView.register(UINib(nibName: "labelandimgCell", bundle: nil), forCellReuseIdentifier: "labelandimg")
+        mainTableView.register(UINib.init(nibName: "SectionTableViewCell", bundle: nil), forCellReuseIdentifier: "sectionCell")
+        mainTableView.separatorStyle = .none
     }
     /*
     // Only override draw() if you perform custom drawing.
@@ -31,15 +33,24 @@ class MenuTableView: UIView {
     }
     */
     
-    private func getCell(indexPath:IndexPath) -> MenuCell{
-        return sections[indexPath.section].cells[indexPath.row]
+    func addSection(section:MenuSection){
+        sections.append(section)
+    }
+    
+    func getTableHeight() -> Float{
+        return Float(showSectionNum * (120 + 45))
     }
 
 }
 
 class  MenuSection {
-    private var cells: [MenuCell] = []
+    var cells: [MenuCell] = []
+    var title: String = ""
     
+    init(cells:[MenuCell],title:String) {
+        self.cells = cells
+        self.title = title
+    }
     
 }
 
@@ -47,21 +58,46 @@ class  MenuCell {
     var title:String = ""
     var img :UIImage!
     
-    
+    init(title:String,img:UIImage) {
+        self.img = img
+        self.title = title
+    }
 }
 
 extension MenuTableView:UITableViewDelegate,UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return showSectionNum
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sections.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "labelandimg") as! LabelAndImgTableViewCell
-        cell.cellImg.image = getCell(indexPath: indexPath).img
-        
-        cell.cellTitleLB.text = getCell(indexPath: indexPath).title
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell") as! SectionTableViewCell
+        cell.cells = sections[indexPath.section].cells
         return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let thatSection = sections[section]
+        return thatSection.title
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
     
     
+    
+}
+
+extension UITableViewCell {
+    var tableView: MenuTableView? {
+        var view = self.superview
+        while (view != nil && view!.isKind(of: MenuTableView.self) == false) {
+            view = view!.superview
+        }
+        return view as? MenuTableView
+    }
 }

@@ -1,0 +1,6 @@
+framework module Pods_MenuTableViewTests {
+  umbrella header "Pods-MenuTableViewTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

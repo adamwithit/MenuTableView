@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1896EEA2BE85B32502E1FF60 /* Pods_MenuTableViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7FA85EECD2DFA5F2F88928 /* Pods_MenuTableViewUITests.framework */; };
-		1E80B05ECE41202D65E5CE03 /* Pods_MenuTableViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A226FB94257E4999890AFE12 /* Pods_MenuTableViewTests.framework */; };
-		27243162A76A2BC491F3AA6D /* Pods_MenuTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06711B7A7B37B64E9897EAC /* Pods_MenuTableView.framework */; };
 		AFF275DF21EC3F5F007D9F31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF275DE21EC3F5F007D9F31 /* AppDelegate.swift */; };
 		AFF275E121EC3F5F007D9F31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF275E021EC3F5F007D9F31 /* ViewController.swift */; };
 		AFF275E421EC3F5F007D9F31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF275E221EC3F5F007D9F31 /* Main.storyboard */; };
@@ -26,12 +23,6 @@
 		AFF2761721EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2761621EC9331007D9F31 /* LabelAndImgTableViewCell.swift */; };
 		AFF2761821EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2761621EC9331007D9F31 /* LabelAndImgTableViewCell.swift */; };
 		AFF2761921EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2761621EC9331007D9F31 /* LabelAndImgTableViewCell.swift */; };
-		AFF2761D21EDAC7D007D9F31 /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2761B21EDAC7D007D9F31 /* SectionTableViewCell.swift */; };
-		AFF2761E21EDAC7D007D9F31 /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2761B21EDAC7D007D9F31 /* SectionTableViewCell.swift */; };
-		AFF2761F21EDAC7D007D9F31 /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2761B21EDAC7D007D9F31 /* SectionTableViewCell.swift */; };
-		AFF2762021EDAC7D007D9F31 /* SectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF2761C21EDAC7D007D9F31 /* SectionTableViewCell.xib */; };
-		AFF2762121EDAC7D007D9F31 /* SectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF2761C21EDAC7D007D9F31 /* SectionTableViewCell.xib */; };
-		AFF2762221EDAC7D007D9F31 /* SectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF2761C21EDAC7D007D9F31 /* SectionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03D816E7FDCD15D005539AA6 /* Pods-MenuTableViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuTableViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuTableViewUITests/Pods-MenuTableViewUITests.release.xcconfig"; sourceTree = "<group>"; };
-		206574E0EABE5F240CAA3229 /* Pods-MenuTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuTableView/Pods-MenuTableView.release.xcconfig"; sourceTree = "<group>"; };
-		344D38F8D0620BAC8A09BAEE /* Pods-MenuTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuTableView/Pods-MenuTableView.debug.xcconfig"; sourceTree = "<group>"; };
-		A06711B7A7B37B64E9897EAC /* Pods_MenuTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A226FB94257E4999890AFE12 /* Pods_MenuTableViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuTableViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF275DB21EC3F5F007D9F31 /* MenuTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF275DE21EC3F5F007D9F31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFF275E021EC3F5F007D9F31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,12 +59,6 @@
 		AFF2760E21EC833D007D9F31 /* MenuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableView.swift; sourceTree = "<group>"; };
 		AFF2761221EC8F62007D9F31 /* labelandimgCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = labelandimgCell.xib; sourceTree = "<group>"; };
 		AFF2761621EC9331007D9F31 /* LabelAndImgTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndImgTableViewCell.swift; sourceTree = "<group>"; };
-		AFF2761B21EDAC7D007D9F31 /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
-		AFF2761C21EDAC7D007D9F31 /* SectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTableViewCell.xib; sourceTree = "<group>"; };
-		B58E37AB81CD09B2CD30058F /* Pods-MenuTableViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuTableViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuTableViewTests/Pods-MenuTableViewTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C32B00CB702EE18736DF320C /* Pods-MenuTableViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuTableViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuTableViewTests/Pods-MenuTableViewTests.release.xcconfig"; sourceTree = "<group>"; };
-		C937646058A8F60F107CEF1F /* Pods-MenuTableViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuTableViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuTableViewUITests/Pods-MenuTableViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DA7FA85EECD2DFA5F2F88928 /* Pods_MenuTableViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuTableViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27243162A76A2BC491F3AA6D /* Pods_MenuTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E80B05ECE41202D65E5CE03 /* Pods_MenuTableViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,36 +80,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1896EEA2BE85B32502E1FF60 /* Pods_MenuTableViewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1827B2B826239F0C540EE179 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				344D38F8D0620BAC8A09BAEE /* Pods-MenuTableView.debug.xcconfig */,
-				206574E0EABE5F240CAA3229 /* Pods-MenuTableView.release.xcconfig */,
-				B58E37AB81CD09B2CD30058F /* Pods-MenuTableViewTests.debug.xcconfig */,
-				C32B00CB702EE18736DF320C /* Pods-MenuTableViewTests.release.xcconfig */,
-				C937646058A8F60F107CEF1F /* Pods-MenuTableViewUITests.debug.xcconfig */,
-				03D816E7FDCD15D005539AA6 /* Pods-MenuTableViewUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		525962ED2C979437E4FAE6BF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A06711B7A7B37B64E9897EAC /* Pods_MenuTableView.framework */,
-				A226FB94257E4999890AFE12 /* Pods_MenuTableViewTests.framework */,
-				DA7FA85EECD2DFA5F2F88928 /* Pods_MenuTableViewUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AFF275D221EC3F5F007D9F31 = {
 			isa = PBXGroup;
 			children = (
@@ -139,8 +93,6 @@
 				AFF275F221EC3F66007D9F31 /* MenuTableViewTests */,
 				AFF275FD21EC3F66007D9F31 /* MenuTableViewUITests */,
 				AFF275DC21EC3F5F007D9F31 /* Products */,
-				1827B2B826239F0C540EE179 /* Pods */,
-				525962ED2C979437E4FAE6BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,15 +109,11 @@
 		AFF275DD21EC3F5F007D9F31 /* MenuTableView */ = {
 			isa = PBXGroup;
 			children = (
+				AFF2761A21ED7950007D9F31 /* Example */,
 				AFF2760D21EC828D007D9F31 /* Class */,
-				AFF275DE21EC3F5F007D9F31 /* AppDelegate.swift */,
-				AFF275E021EC3F5F007D9F31 /* ViewController.swift */,
-				AFF275E221EC3F5F007D9F31 /* Main.storyboard */,
-				AFF275E521EC3F66007D9F31 /* Assets.xcassets */,
-				AFF275E721EC3F66007D9F31 /* LaunchScreen.storyboard */,
-				AFF275EA21EC3F66007D9F31 /* Info.plist */,
 			);
-			path = MenuTableView;
+			name = MenuTableView;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		AFF275F221EC3F66007D9F31 /* MenuTableViewTests */ = {
@@ -174,7 +122,8 @@
 				AFF275F321EC3F66007D9F31 /* MenuTableViewTests.swift */,
 				AFF275F521EC3F66007D9F31 /* Info.plist */,
 			);
-			path = MenuTableViewTests;
+			name = MenuTableViewTests;
+			path = ../../MenuTableViewTests;
 			sourceTree = "<group>";
 		};
 		AFF275FD21EC3F66007D9F31 /* MenuTableViewUITests */ = {
@@ -183,7 +132,8 @@
 				AFF275FE21EC3F66007D9F31 /* MenuTableViewUITests.swift */,
 				AFF2760021EC3F66007D9F31 /* Info.plist */,
 			);
-			path = MenuTableViewUITests;
+			name = MenuTableViewUITests;
+			path = ../../MenuTableViewUITests;
 			sourceTree = "<group>";
 		};
 		AFF2760D21EC828D007D9F31 /* Class */ = {
@@ -192,10 +142,21 @@
 				AFF2760E21EC833D007D9F31 /* MenuTableView.swift */,
 				AFF2761221EC8F62007D9F31 /* labelandimgCell.xib */,
 				AFF2761621EC9331007D9F31 /* LabelAndImgTableViewCell.swift */,
-				AFF2761B21EDAC7D007D9F31 /* SectionTableViewCell.swift */,
-				AFF2761C21EDAC7D007D9F31 /* SectionTableViewCell.xib */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		AFF2761A21ED7950007D9F31 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				AFF275DE21EC3F5F007D9F31 /* AppDelegate.swift */,
+				AFF275E521EC3F66007D9F31 /* Assets.xcassets */,
+				AFF275E721EC3F66007D9F31 /* LaunchScreen.storyboard */,
+				AFF275EA21EC3F66007D9F31 /* Info.plist */,
+				AFF275E021EC3F5F007D9F31 /* ViewController.swift */,
+				AFF275E221EC3F5F007D9F31 /* Main.storyboard */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,11 +166,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFF2760321EC3F66007D9F31 /* Build configuration list for PBXNativeTarget "MenuTableView" */;
 			buildPhases = (
-				B872A6E88729D90A8CDF6A75 /* [CP] Check Pods Manifest.lock */,
 				AFF275D721EC3F5F007D9F31 /* Sources */,
 				AFF275D821EC3F5F007D9F31 /* Frameworks */,
 				AFF275D921EC3F5F007D9F31 /* Resources */,
-				5CF3529E307A7C309A6DC21C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,7 +183,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFF2760621EC3F66007D9F31 /* Build configuration list for PBXNativeTarget "MenuTableViewTests" */;
 			buildPhases = (
-				30BC61ECB3349C4ED455E4D3 /* [CP] Check Pods Manifest.lock */,
 				AFF275EB21EC3F66007D9F31 /* Sources */,
 				AFF275EC21EC3F66007D9F31 /* Frameworks */,
 				AFF275ED21EC3F66007D9F31 /* Resources */,
@@ -243,7 +201,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFF2760921EC3F66007D9F31 /* Build configuration list for PBXNativeTarget "MenuTableViewUITests" */;
 			buildPhases = (
-				02D6D68CA6FC969C9E46C6D1 /* [CP] Check Pods Manifest.lock */,
 				AFF275F621EC3F66007D9F31 /* Sources */,
 				AFF275F721EC3F66007D9F31 /* Frameworks */,
 				AFF275F821EC3F66007D9F31 /* Resources */,
@@ -306,7 +263,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFF2762021EDAC7D007D9F31 /* SectionTableViewCell.xib in Resources */,
 				AFF2761321EC8F62007D9F31 /* labelandimgCell.xib in Resources */,
 				AFF275E921EC3F66007D9F31 /* LaunchScreen.storyboard in Resources */,
 				AFF275E621EC3F66007D9F31 /* Assets.xcassets in Resources */,
@@ -319,7 +275,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF2761421EC8F62007D9F31 /* labelandimgCell.xib in Resources */,
-				AFF2762121EDAC7D007D9F31 /* SectionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,86 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF2761521EC8F62007D9F31 /* labelandimgCell.xib in Resources */,
-				AFF2762221EDAC7D007D9F31 /* SectionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		02D6D68CA6FC969C9E46C6D1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MenuTableViewUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		30BC61ECB3349C4ED455E4D3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MenuTableViewTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5CF3529E307A7C309A6DC21C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MenuTableView/Pods-MenuTableView-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MenuTableView/Pods-MenuTableView-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B872A6E88729D90A8CDF6A75 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MenuTableView-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFF275D721EC3F5F007D9F31 /* Sources */ = {
@@ -417,7 +296,6 @@
 				AFF2761721EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */,
 				AFF275E121EC3F5F007D9F31 /* ViewController.swift in Sources */,
 				AFF2760F21EC833D007D9F31 /* MenuTableView.swift in Sources */,
-				AFF2761D21EDAC7D007D9F31 /* SectionTableViewCell.swift in Sources */,
 				AFF275DF21EC3F5F007D9F31 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +305,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF2761021EC833D007D9F31 /* MenuTableView.swift in Sources */,
-				AFF2761E21EDAC7D007D9F31 /* SectionTableViewCell.swift in Sources */,
 				AFF275F421EC3F66007D9F31 /* MenuTableViewTests.swift in Sources */,
 				AFF2761821EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */,
 			);
@@ -438,7 +315,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF2761121EC833D007D9F31 /* MenuTableView.swift in Sources */,
-				AFF2761F21EDAC7D007D9F31 /* SectionTableViewCell.swift in Sources */,
 				AFF275FF21EC3F66007D9F31 /* MenuTableViewUITests.swift in Sources */,
 				AFF2761921EC9331007D9F31 /* LabelAndImgTableViewCell.swift in Sources */,
 			);
@@ -530,7 +406,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				INFOPLIST_FILE = MenuTableView/Example/info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -585,7 +462,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				INFOPLIST_FILE = MenuTableView/Example/info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -597,12 +475,11 @@
 		};
 		AFF2760421EC3F66007D9F31 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 344D38F8D0620BAC8A09BAEE /* Pods-MenuTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = MenuTableView/Info.plist;
+				INFOPLIST_FILE = MenuTableView/Example/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,12 +493,11 @@
 		};
 		AFF2760521EC3F66007D9F31 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 206574E0EABE5F240CAA3229 /* Pods-MenuTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = MenuTableView/Info.plist;
+				INFOPLIST_FILE = MenuTableView/Example/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,7 +511,6 @@
 		};
 		AFF2760721EC3F66007D9F31 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B58E37AB81CD09B2CD30058F /* Pods-MenuTableViewTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -656,7 +531,6 @@
 		};
 		AFF2760821EC3F66007D9F31 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C32B00CB702EE18736DF320C /* Pods-MenuTableViewTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -677,7 +551,6 @@
 		};
 		AFF2760A21EC3F66007D9F31 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C937646058A8F60F107CEF1F /* Pods-MenuTableViewUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -697,7 +570,6 @@
 		};
 		AFF2760B21EC3F66007D9F31 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03D816E7FDCD15D005539AA6 /* Pods-MenuTableViewUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

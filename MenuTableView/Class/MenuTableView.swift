@@ -49,7 +49,7 @@ public class MenuTableView: UIView {
         mainTableView.reloadData()
     }
     
-    func getTableHeight() -> Float{
+    public func getTableHeight() -> Float{
         return Float(showSectionNum * (120 + 45))
     }
 
@@ -59,7 +59,7 @@ public class  MenuSection {
     var cells: [MenuCell] = []
     var title: String = ""
     
-    init(cells:[MenuCell],title:String) {
+    public init(cells:[MenuCell],title:String) {
         self.cells = cells
         self.title = title
     }
@@ -71,7 +71,7 @@ public class  MenuCell {
     var img :UIImage!
     var callBackFunc: (() -> Bool)? = nil
     
-    init(title:String,img:UIImage,callBackFunc: (() -> Bool)?) {
+    public init(title:String,img:UIImage,callBackFunc: (() -> Bool)?) {
         self.img = img
         self.title = title
         if (callBackFunc != nil){

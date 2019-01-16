@@ -55,7 +55,7 @@ public class MenuTableView: UIView {
 
 }
 
-public class  MenuSection {
+public class  MenuSection : NSObject{
     var cells: [MenuCell] = []
     var title: String = ""
     
@@ -66,7 +66,7 @@ public class  MenuSection {
     
 }
 
-public class  MenuCell {
+public class  MenuCell: NSObject {
     var title:String = ""
     var img :UIImage!
     var callBackFunc: (() -> Bool)? = nil

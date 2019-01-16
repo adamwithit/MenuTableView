@@ -33,8 +33,20 @@ public class MenuTableView: UIView {
     }
     */
     
-    func addSection(section:MenuSection){
+    public func add(section:MenuSection){
         sections.append(section)
+    }
+    
+    public func remove(sectionFromIndex:Int){
+        if sections.count > sectionFromIndex{
+            sections.removeSubrange(sectionFromIndex...)
+            showSectionNum = sections.count
+            mainTableView.reloadData()
+        }
+        
+    }
+    public func reloadData(){
+        mainTableView.reloadData()
     }
     
     func getTableHeight() -> Float{
@@ -57,15 +69,19 @@ public class  MenuSection {
 public class  MenuCell {
     var title:String = ""
     var img :UIImage!
+    var callBackFunc: (() -> Bool)? = nil
     
-    init(title:String,img:UIImage) {
+    init(title:String,img:UIImage,callBackFunc: (() -> Bool)?) {
         self.img = img
         self.title = title
+        if (callBackFunc != nil){
+            self.callBackFunc = callBackFunc
+        }
     }
 }
 
 extension MenuTableView:UITableViewDelegate,UITableViewDataSource{
-    func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return showSectionNum
     }
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,16 +91,17 @@ extension MenuTableView:UITableViewDelegate,UITableViewDataSource{
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell") as! SectionTableViewCell
         cell.cells = sections[indexPath.section].cells
+        cell.backgroundColor = .black
         return cell
         
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let thatSection = sections[section]
         return thatSection.title
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
     

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MenuTableView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A short description of MenuTableView."
 
   # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   A step by step menu 
   DESC
 
-  s.homepage     = "http://EXAMPLE/MenuTableView"
+  s.homepage     = "https://github.com/adamwithit/MenuTableView.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 

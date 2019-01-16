@@ -23,6 +23,15 @@ class SectionTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func showNextSection(){
+        let perentView = self.tableView
+        if perentView != nil && perentView?.showSectionNum ?? 0 < perentView?.sections.count ?? 0{
+            
+            perentView?.showSectionNum += 1
+            perentView?.mainTableView.reloadData()
+        }
+    }
 }
 
 extension SectionTableViewCell:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
@@ -43,10 +52,8 @@ extension SectionTableViewCell:UICollectionViewDelegate,UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if self.tableView != nil && self.tableView?.showSectionNum ?? 0 < self.tableView?.sections.count ?? 0{
-            
-            self.tableView?.showSectionNum += 1
-            self.tableView?.mainTableView.reloadData()
+        if cells[indexPath.row].callBackFunc != nil && cells[indexPath.row].callBackFunc!() {
+            showNextSection()
         }
         
     }

@@ -11,10 +11,10 @@ import UIKit
 public class MenuTableView: UIView {
 
     var mainTableView:UITableView!
-    var sections : [MenuSection] = []
+    open var sections : [MenuSection] = []
     var showSectionNum = 1
     override public func awakeFromNib() {
-        mainTableView = UITableView.init(frame: self.frame)
+        mainTableView = UITableView.init(frame: CGRect.init(origin: CGPoint.init(x: 0, y: 0), size: self.frame.size))
         self.addSubview(mainTableView)
         setupTableView()
     }

@@ -11,11 +11,14 @@ import UIKit
 class SectionTableViewCell: UITableViewCell {
     @IBOutlet weak var sectionCV: UICollectionView!
     var cells :[MenuCell] = []
+    var cellBackgroundColor = UIColor.white
     override func awakeFromNib() {
         super.awakeFromNib()
         sectionCV.delegate = self
         sectionCV.dataSource = self
-        sectionCV.register(UINib.init(nibName: "labelandimgCell", bundle: nil), forCellWithReuseIdentifier: "labelAndImgCell")
+        let podBundle = Bundle(for: SectionTableViewCell.self)
+        let nib = UINib.init(nibName: "labelandimgCell", bundle: podBundle)
+        sectionCV.register(nib, forCellWithReuseIdentifier: "labelAndImgCell")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -29,7 +32,7 @@ class SectionTableViewCell: UITableViewCell {
         if perentView != nil && perentView?.showSectionNum ?? 0 < perentView?.sections.count ?? 0{
             
             perentView?.showSectionNum += 1
-            perentView?.mainTableView.reloadData()
+            perentView?.reloadData()
         }
     }
 }
@@ -44,6 +47,7 @@ extension SectionTableViewCell:UICollectionViewDelegate,UICollectionViewDataSour
         cell.cellImg.image = cells[indexPath.row].img
         
         cell.cellTitleLB.text = cells[indexPath.row].title
+        cell.viewWithTag(1)?.backgroundColor = cellBackgroundColor
         return cell
     }
     

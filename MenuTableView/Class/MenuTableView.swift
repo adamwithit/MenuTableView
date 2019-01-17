@@ -12,17 +12,35 @@ public class MenuTableView: UIView {
 
     var mainTableView:UITableView!
     open var sections : [MenuSection] = []
+    open var tableBackgroundColor : UIColor?{
+        set{
+            mainTableView.backgroundColor = newValue
+        }
+        get{
+            return mainTableView.backgroundColor
+        }
+    }
+    var sectionBackgroundColor = UIColor.white
+    var cellBackgroundColor = UIColor.white
     var showSectionNum = 1
     override public func awakeFromNib() {
         mainTableView = UITableView.init(frame: CGRect.init(origin: CGPoint.init(x: 0, y: 0), size: self.frame.size))
+        mainTableView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(mainTableView)
+        let horizontalConstraint = NSLayoutConstraint(item: mainTableView, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
+        
+        NSLayoutConstraint.activate([
+            horizontalConstraint
+            ])
         setupTableView()
     }
     
     func setupTableView(){
         mainTableView.delegate = self
         mainTableView.dataSource = self
-        mainTableView.register(UINib.init(nibName: "SectionTableViewCell", bundle: nil), forCellReuseIdentifier: "sectionCell")
+        let podBundle = Bundle(for: MenuTableView.self)
+        let nib = UINib.init(nibName: "SectionTableViewCell", bundle: podBundle)
+        mainTableView.register(nib, forCellReuseIdentifier: "sectionCell")
         mainTableView.separatorStyle = .none
     }
     /*
@@ -41,16 +59,29 @@ public class MenuTableView: UIView {
         if sections.count > sectionFromIndex{
             sections.removeSubrange(sectionFromIndex...)
             showSectionNum = sections.count
-            mainTableView.reloadData()
+            reloadData()
         }
         
     }
-    public func reloadData(){
-        mainTableView.reloadData()
+    
+    public func setSectionBackgroundColor(color:UIColor){
+        sectionBackgroundColor = color
+        reloadData()
     }
     
-    public func getTableHeight() -> Float{
-        return Float(showSectionNum * (120 + 45))
+    public func setCellBackgroundColor(color:UIColor){
+        cellBackgroundColor = color
+        reloadData()
+    }
+    public func reloadData(){
+        mainTableView.reloadTable {
+            self.mainTableView.frame = CGRect.init(origin: self.frame.origin, size: CGSize.init(width: self.frame.size.width, height: self.getTableHeight()))
+            self.mainTableView.setNeedsLayout()
+        }
+    }
+    
+    public func getTableHeight() -> CGFloat{
+        return CGFloat(showSectionNum * (120 + 28))
     }
 
 }
@@ -82,16 +113,23 @@ public class  MenuCell: NSObject {
 
 extension MenuTableView:UITableViewDelegate,UITableViewDataSource{
     public func numberOfSections(in tableView: UITableView) -> Int {
-        return showSectionNum
+        if sections.count > 0 {
+            return showSectionNum
+        }else{
+            return 0
+        }
+        
     }
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
+       
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell") as! SectionTableViewCell
         cell.cells = sections[indexPath.section].cells
-        cell.backgroundColor = .black
+        cell.backgroundColor = sectionBackgroundColor
+        cell.cellBackgroundColor = cellBackgroundColor
         return cell
         
     }
@@ -116,5 +154,12 @@ extension UITableViewCell {
             view = view!.superview
         }
         return view as? MenuTableView
+    }
+}
+
+extension UITableView {
+    func reloadTable(completion: @escaping () -> ()) {
+        UIView.animate(withDuration: 0, animations: { self.reloadData()})
+        {_ in completion() }
     }
 }

@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        menuTable.setSectionBackgroundColor(color: .blue)
+        menuTable.tableBackgroundColor = UIColor.black
+        menuTable.setCellBackgroundColor(color: .orange)
         let cell1InSection1 = MenuCell.init(title: "male", img: UIImage.fontAwesomeIcon(name:.male ,style:.solid, textColor:.black, size: CGSize.init(width: 30, height: 30)),callBackFunc:{return true})
         let cell2InSection1 = MenuCell.init(title: "female", img: UIImage.fontAwesomeIcon(name:.female ,style:.solid, textColor:.black, size: CGSize.init(width: 30, height: 30)),callBackFunc:{return true})
         let section1 = MenuSection.init(cells: [cell1InSection1,cell2InSection1], title: "Gender")
